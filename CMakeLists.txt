@@ -9,7 +9,7 @@ project(LibTwoUtils
         VERSION 0.0.0.0)
 
 add_executable(LibTwoUtils
-		    main.cpp
+		    Main.cpp
 			TwoUtils.cpp)
 
 #enable_testing()
