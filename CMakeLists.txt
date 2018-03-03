@@ -7,3 +7,14 @@ endif()
 project(LibTwoUtils
         LANGUAGES CXX
         VERSION 0.0.0.0)
+
+add_executable(LibTwoUtils
+		    main.cpp
+			TwoUtils.cpp)
+
+enable_testing()
+
+add_executable(mytest test.cpp TwoUtils.cpp)
+add_executable(mytest2 test2.cpp TwoUtils.cpp)
+add_test(Mytest mytest)
+add_test(Mytest2 mytest2)
