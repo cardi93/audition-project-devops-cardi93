@@ -3,6 +3,6 @@ image:
 
 build_script:
 - cmd: >-
-cmake .
+cmake -G "Visual Studio 15"
 cmake --build . -- -j2
 ctest -j2
