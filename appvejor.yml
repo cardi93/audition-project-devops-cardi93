@@ -3,6 +3,6 @@ image:
 
 build_script:
 - cmd: >-
-cmake -G "Visual Studio 15"
+cmake C:\projects\audition-project-devops-cardi93 -G "Visual Studio 15"
 cmake --build . -- -j2
 ctest -j2
