@@ -4,6 +4,6 @@ build_script:
 - cmd: >-
 mkdir appvejor
 cd appvejor
-- cmake -G "Visual Studio 15"
-- cmake --build . -- -j2
+build_script:
+  - cmake --build . --config Release -- %MSBUILD_ARGS%
 - ctest -j2
