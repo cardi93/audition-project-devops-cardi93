@@ -1,9 +1,5 @@
 image: Visual Studio 2017
 
 build_script:
-- cmd: >-
-mkdir appvejor
-cd appvejor
-build_script:
   - cmake --build . --config Release -- %MSBUILD_ARGS%
 - ctest -j2
