@@ -1,5 +1,5 @@
 image: Visual Studio 2017
-clone_folder: c:\projects\test
+
 build_script:
 - cmake --build . --config Release -- %MSBUILD_ARGS%
 - ctest -j2
