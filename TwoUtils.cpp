@@ -19,7 +19,7 @@ double LibTwoUtils::sample_mean(const std::vector<double>& sample)
 	if (sample.size() == 0)										// Protection against an empty vector
 	{
 		std::cout << "Error! Sample is empty" << std::endl;		
-		abort();
+		return EXIT_FAILURE;
 	}
 	else for (it = sample.begin(); it != sample.end(); it++)	// Add all the values ​​of the vector by moving the iterator
 		sum+=*it;
@@ -40,7 +40,7 @@ double LibTwoUtils::find_max(const std::vector<double>& vec)
 	if (vec.size() == 0)										// Protection against an empty vector
 	{
 		std::cout << "Error! Vector is empty" << std::endl;
-		abort();
+		return EXIT_FAILURE;
 	}
 	max = std::max_element(vec.begin(), vec.end());				// Find the maximum value
 	return *max;
